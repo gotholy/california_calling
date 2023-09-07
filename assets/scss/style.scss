@@ -270,9 +270,10 @@ main {
       display: flex;
       flex-direction: row;
       align-items: center;
+      margin-left: 5vw;
       .smallimg {
         height: 60vh;
-        margin: 15vh 0 0 -70vw;
+        margin: 20vh 0 0 -70vw;
       }
       .bigimg {
         width: 50vw;
@@ -357,10 +358,31 @@ footer {
   .banner {
     margin-top: 0vh;
     width: 120%;
-    height: 100px;
+    height: 120px;
     background-color: #fff;
     transform: rotate(38deg);
-    color: black;
     position: relative;
+    z-index: 0;
+    div {
+      color: black;
+      position: absolute;
+      font-size: 10rem;
+      font-family: Inter;
+      font-weight: 700;
+      animation: slide 2s infinite linear;
+      animation-direction: alternate;
+      span {
+        color: #fff;
+        text-shadow: 0px 0px 3px black;
+      }
+    }
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(40%);
   }
 }
