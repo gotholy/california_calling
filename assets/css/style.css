@@ -1,0 +1,361 @@
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+@font-face {
+  font-family: WorkSans;
+  src: url("../fonts/WorkSans-VariableFont_wght.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: #fff;
+}
+
+/* ------------- HEADER ------------------ */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  padding-bottom: 15vh;
+}
+header div {
+  height: 16vh;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+header article {
+  width: 450px;
+  height: 25vh;
+  padding: 5vh;
+  margin-bottom: 50vh;
+  text-align: center;
+}
+header article p {
+  font-family: WorkSans;
+  font-size: 1.2rem;
+  margin-bottom: 2vh;
+}
+header article h1 {
+  font-family: Inter;
+  font-size: 6.4rem;
+}
+header article .textshadow {
+  color: black;
+  text-shadow: 0px 0px 3px white;
+  line-height: 2.5rem;
+  margin-bottom: 4.5vh;
+}
+header nav {
+  width: 80vw;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  border: 1px solid #fff;
+  padding: 1.3vh 2vw;
+}
+header nav a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+main {
+  background-color: black;
+}
+main .section-story {
+  padding-left: 10vw;
+  font-size: 8.6rem;
+  margin-bottom: 8vh;
+}
+main .section-story h2 {
+  margin-right: 10vw;
+  font-family: Inter;
+  font-size: 10.5rem;
+  font-weight: 700;
+  line-height: 11rem;
+  letter-spacing: 0.3rem;
+}
+main .section-story article {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11vh;
+}
+main .section-story article ol {
+  list-style-type: none;
+  margin-top: 15vh;
+}
+main .section-story article ol li:nth-of-type(odd) {
+  font-family: WorkSans;
+  font-size: 1.4rem;
+}
+main .section-story article ol li:nth-of-type(even) {
+  font-family: Inter;
+  font-size: 11rem;
+  font-weight: 700;
+  margin-bottom: 5vh;
+}
+main .section-action {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+main .section-action .action1 {
+  width: 25vw;
+  margin: -15vh 10vw 10vh auto;
+}
+main .section-action .action2 {
+  width: 20vw;
+  margin: 5vw;
+}
+main .section-action .action3 {
+  width: 20vw;
+  margin: -5vh 0 0 auto;
+}
+main .section-action .stuck {
+  color: black;
+  width: 30vw;
+  margin: -15vh auto auto 30vw;
+}
+main .section-action .stuck h3 {
+  letter-spacing: 1px;
+  font-family: Inter;
+  font-size: 8rem;
+  font-weight: 700;
+}
+main .section-action .stuck p {
+  font-family: WorkSans;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.5px;
+}
+main .section-action .action4 {
+  width: 20vw;
+  margin: 0 0 auto 15vw;
+}
+main .section-action .action5 {
+  width: 25vw;
+  margin: -5vh 15vw 5vh auto;
+}
+main .section-action .action6 {
+  width: 20vw;
+}
+main .section-action .tshirts {
+  width: 30vw;
+  color: black;
+  font-family: WorkSans;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.5px;
+  margin: -17vh 0 10vh 30vw;
+}
+main .section-action .action7 {
+  width: 30vw;
+  margin: auto 25vw -5vh auto;
+}
+main .section-goldbear {
+  display: flex;
+  flex-direction: column;
+  gap: 15vh;
+  padding: 10vh 10vw 0 10vw;
+}
+main .section-goldbear .thebear {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10vh;
+}
+main .section-goldbear .thebear .thebear1 div {
+  font-family: WorkSans;
+  font-size: 2rem;
+  margin-bottom: 1vh;
+}
+main .section-goldbear .thebear .thebear1 h2 {
+  font-family: Inter;
+  font-size: 8rem;
+  font-weight: 700;
+  width: 18vw;
+}
+main .section-goldbear .thebear .kevin-lam {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+main .section-goldbear .thebear .kevin-lam div {
+  width: 40vw;
+  font-size: 3rem;
+  font-family: Inter;
+  font-weight: 700;
+  padding-right: 6vw;
+  margin-bottom: 1vw;
+}
+main .section-goldbear .thebear .kevin-lam p {
+  font-size: 1.8rem;
+  font-family: WorkSans;
+}
+main .section-goldbear .bearimg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: -20vh;
+}
+main .section-goldbear .bearimg .bigimg {
+  width: 50vw;
+}
+main .section-goldbear .bearimg .smallimg {
+  height: 60vh;
+  width: 30vw;
+  margin: 20vh auto auto -5vw;
+}
+main .section-poppybear {
+  display: flex;
+  flex-direction: column;
+  gap: 15vh;
+  padding: 10vh 10vw 5vh 10vw;
+  background-color: rgb(244, 244, 244);
+  color: black;
+}
+main .section-poppybear .thebear {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10vh;
+}
+main .section-poppybear .thebear .thebear1 div {
+  font-family: WorkSans;
+  font-size: 2rem;
+  margin-bottom: 1vh;
+}
+main .section-poppybear .thebear .thebear1 h2 {
+  font-family: Inter;
+  font-size: 8rem;
+  font-weight: 700;
+  width: 18vw;
+}
+main .section-poppybear .thebear .Alyssa-wigant {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+main .section-poppybear .thebear .Alyssa-wigant div {
+  width: 40vw;
+  font-size: 3rem;
+  font-family: Inter;
+  font-weight: 700;
+  padding-right: 6vw;
+  margin-bottom: 1vw;
+}
+main .section-poppybear .thebear .Alyssa-wigant p {
+  font-size: 1.8rem;
+  font-family: WorkSans;
+}
+main .section-poppybear .bearimg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .section-poppybear .bearimg .smallimg {
+  height: 60vh;
+  margin: 15vh 0 0 -70vw;
+}
+main .section-poppybear .bearimg .bigimg {
+  width: 50vw;
+  margin-left: 20vw;
+}
+main .animation {
+  overflow: hidden;
+  background-color: white;
+}
+main .animation .circle {
+  width: 35vw;
+  position: relative;
+  animation: rotate 8s linear infinite;
+  margin-left: 75%;
+  margin-top: -10%;
+  margin-bottom: 20vh;
+  padding: 0;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+footer {
+  background-color: black;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  padding-left: 10vw;
+}
+footer section h5 {
+  color: aqua;
+}
+footer section p {
+  font-size: 1.2rem;
+  font-family: WorkSans;
+  margin: 1vh 0vw;
+}
+footer section h4 {
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-weight: 700;
+  width: 50vh;
+  margin-bottom: 4vh;
+}
+footer section a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  border: 1px solid #fff;
+  padding: 1.3vh 2vw;
+  margin-bottom: 15vh;
+}
+footer section a:hover {
+  background-color: #fff;
+  color: black;
+}
+footer section .logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10vh;
+  margin-right: 10vw;
+}
+footer section .logos .logo {
+  height: 20px;
+  width: 20px;
+}
+footer section .logos .sfwd {
+  height: 30px;
+}
+footer section .logos .ngo {
+  height: 30px;
+}
+footer .banner {
+  margin-top: 0vh;
+  width: 120%;
+  height: 100px;
+  background-color: #fff;
+  transform: rotate(38deg);
+  color: black;
+  position: relative;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,366 @@
+@import "./variable.scss";
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+  font-family: WorkSans;
+  src: url("../fonts/WorkSans-VariableFont_wght.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  color: #fff;
+}
+
+/* ------------- HEADER ------------------ */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  padding-bottom: 15vh;
+  div {
+    height: 16vh;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  article {
+    width: 450px;
+    height: 25vh;
+    padding: 5vh;
+    margin-bottom: 50vh;
+    text-align: center;
+    p {
+      font-family: WorkSans;
+      font-size: 1.2rem;
+      margin-bottom: 2vh;
+    }
+    h1 {
+      font-family: Inter;
+      font-size: 6.4rem;
+    }
+    .textshadow {
+      color: black;
+      text-shadow: 0px 0px 3px white;
+      line-height: 2.5rem;
+      margin-bottom: 4.5vh;
+    }
+  }
+  nav {
+    width: 80vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 2rem;
+      border: 1px solid #fff;
+      padding: 1.3vh 2vw;
+      &:hover {
+        background-color: #fff;
+        color: black;
+      }
+    }
+  }
+}
+
+main {
+  background-color: black;
+  .section-story {
+    padding-left: 10vw;
+    font-size: 8.6rem;
+    margin-bottom: 8vh;
+    h2 {
+      margin-right: 10vw;
+      font-family: Inter;
+      font-size: 10.5rem;
+      font-weight: 700;
+      line-height: 11rem;
+      letter-spacing: 0.3rem;
+    }
+
+    article {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 11vh;
+      ol {
+        list-style-type: none;
+        margin-top: 15vh;
+        li:nth-of-type(odd) {
+          font-family: WorkSans;
+          font-size: 1.4rem;
+        }
+        li:nth-of-type(even) {
+          font-family: Inter;
+          font-size: 11rem;
+          font-weight: 700;
+          margin-bottom: 5vh;
+        }
+      }
+    }
+  }
+  .section-action {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    .action1 {
+      width: 25vw;
+      margin: -15vh 10vw 10vh auto;
+    }
+    .action2 {
+      width: 20vw;
+      margin: 5vw;
+    }
+    .action3 {
+      width: 20vw;
+      margin: -5vh 0 0 auto;
+    }
+    .stuck {
+      color: black;
+      width: 30vw;
+      margin: -15vh auto auto 30vw;
+      h3 {
+        letter-spacing: 1px;
+        font-family: Inter;
+        font-size: 8rem;
+        font-weight: 700;
+      }
+      p {
+        font-family: WorkSans;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        letter-spacing: 0.5px;
+      }
+    }
+    .action4 {
+      width: 20vw;
+      margin: 0 0 auto 15vw;
+    }
+    .action5 {
+      width: 25vw;
+      margin: -5vh 15vw 5vh auto;
+    }
+    .action6 {
+      width: 20vw;
+    }
+    .tshirts {
+      width: 30vw;
+      color: black;
+      font-family: WorkSans;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      letter-spacing: 0.5px;
+      margin: -17vh 0 10vh 30vw;
+    }
+    .action7 {
+      width: 30vw;
+      margin: auto 25vw -5vh auto;
+    }
+  }
+  .section-goldbear {
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+    padding: 10vh 10vw 0 10vw;
+    .thebear {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10vh;
+      .thebear1 {
+        div {
+          font-family: WorkSans;
+          font-size: 2rem;
+          margin-bottom: 1vh;
+        }
+        h2 {
+          font-family: Inter;
+          font-size: 8rem;
+          font-weight: 700;
+          width: 18vw;
+        }
+      }
+      .kevin-lam {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        div {
+          width: 40vw;
+          font-size: 3rem;
+          font-family: Inter;
+          font-weight: 700;
+          padding-right: 6vw;
+          margin-bottom: 1vw;
+        }
+        p {
+          font-size: 1.8rem;
+          font-family: WorkSans;
+        }
+      }
+    }
+    .bearimg {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: -20vh;
+      .bigimg {
+        width: 50vw;
+      }
+      .smallimg {
+        height: 60vh;
+        width: 30vw;
+        margin: 20vh auto auto -5vw;
+      }
+    }
+  }
+  .section-poppybear {
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+    padding: 10vh 10vw 5vh 10vw;
+    background-color: rgb(244, 244, 244);
+    color: black;
+    .thebear {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10vh;
+      .thebear1 {
+        div {
+          font-family: WorkSans;
+          font-size: 2rem;
+          margin-bottom: 1vh;
+        }
+        h2 {
+          font-family: Inter;
+          font-size: 8rem;
+          font-weight: 700;
+          width: 18vw;
+        }
+      }
+      .Alyssa-wigant {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        div {
+          width: 40vw;
+          font-size: 3rem;
+          font-family: Inter;
+          font-weight: 700;
+          padding-right: 6vw;
+          margin-bottom: 1vw;
+        }
+        p {
+          font-size: 1.8rem;
+          font-family: WorkSans;
+        }
+      }
+    }
+    .bearimg {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .smallimg {
+        height: 60vh;
+        margin: 15vh 0 0 -70vw;
+      }
+      .bigimg {
+        width: 50vw;
+        margin-left: 20vw;
+      }
+    }
+  }
+  .animation {
+    overflow: hidden;
+    background-color: white;
+    .circle {
+      width: 35vw;
+      position: relative;
+      animation: rotate 8s linear infinite;
+      margin-left: 75%;
+      margin-top: -10%;
+      margin-bottom: 20vh;
+      padding: 0;
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+footer {
+  background-color: black;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  padding-left: 10vw;
+  section {
+    h5 {
+      color: aqua;
+    }
+    p {
+      font-size: 1.2rem;
+      font-family: WorkSans;
+      margin: 1vh 0vw;
+    }
+    h4 {
+      font-family: Inter;
+      font-size: 2.4rem;
+      font-weight: 700;
+      width: 50vh;
+      margin-bottom: 4vh;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 2rem;
+      border: 1px solid #fff;
+      padding: 1.3vh 2vw;
+      margin-bottom: 15vh;
+      &:hover {
+        background-color: #fff;
+        color: black;
+      }
+    }
+    .logos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10vh;
+      margin-right: 10vw;
+      .logo {
+        height: 20px;
+        width: 20px;
+      }
+      .sfwd {
+        height: 30px;
+      }
+      .ngo {
+        height: 30px;
+      }
+    }
+  }
+  .banner {
+    margin-top: 0vh;
+    width: 120%;
+    height: 100px;
+    background-color: #fff;
+    transform: rotate(38deg);
+    color: black;
+    position: relative;
+  }
+}
